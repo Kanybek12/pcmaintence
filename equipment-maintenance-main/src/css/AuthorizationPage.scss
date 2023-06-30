@@ -1,0 +1,42 @@
+.authPage{
+  &__cardAuth{
+    width: 100%;
+    max-width: 500px;
+    filter: drop-shadow(5px 6px 20px rgba(139, 139, 139, 0.3));
+  }
+  &__cardSection{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__authTitle{
+    color: #2F3542;
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Rubik';
+    font-weight: 600;
+    font-style: normal;
+    line-height: 31px;
+  }
+  &__cardImg{
+    width: 80px;
+    height: 80px;
+  }
+  &__inputClass{
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  &__btnLogin{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  @media only screen and (max-width: 1024px){
+    &__cardAuth{
+      width: 100%;
+      max-width: 350px;
+      margin: 0;
+    }
+  }
+}

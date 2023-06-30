@@ -1,0 +1,59 @@
+.indexPage{
+  cursor: pointer;
+  padding: 10px;
+  &__btnLog{
+    background-color: $warning;
+    border-radius: 8px!important;
+  }
+  &__selectLocal{
+    height: 38px!important;
+    min-height: 38px!important;
+    display: flex!important;
+    align-items: center!important;
+    padding-bottom: 10px;
+  }
+  &__timesheetComponents{
+    margin: 20px 0;
+  }
+  &__mainTab{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+  }
+  &__toolbarMenu{
+    width: fit-content;
+    padding: 0;
+    display: none;
+  }
+  &__bannerTitle{
+    display: none;
+  }
+  @media only screen and (max-width: 1024px){
+    .indexPage{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+  @media only screen and (max-width: 500px){
+    .indexPage{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      &__bannerTabs{
+        display: none;
+      }
+      &__bannerLogo{
+        display: none;
+      }
+      &__btnMenu{
+        padding-top: 10px
+      }
+      &__bannerTitle{
+        border-style: solid;
+      }
+    }
+  }
+}
